@@ -1,12 +1,13 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import hero_image from '@/assets/hero_image.jpg'
 
 export default function Hero() {
   return (
     <section className="relative h-[60vh] min-h-[400px] w-full">
       <Image
-        src="https://placehold.co/1600x900.png"
-        alt="A vibrant display of fresh fruits and vegetables"
+      src={hero_image}
+  alt="A vibrant display of fresh fruits and vegetables"
         data-ai-hint="fresh vegetables"
         layout="fill"
         objectFit="cover"
