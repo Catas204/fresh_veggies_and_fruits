@@ -1,3 +1,4 @@
+
 import type { Product } from '@/types';
 
 export const products: Product[] = [
@@ -14,7 +15,7 @@ export const products: Product[] = [
     name: 'Juicy Strawberries',
     price: 3.5,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'strawberry fruit',
+    dataAiHint: 'ripe strawberries',
     category: 'Fruit',
   },
   {
@@ -22,7 +23,7 @@ export const products: Product[] = [
     name: 'Crisp Red Apples',
     price: 2.75,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'apple fruit',
+    dataAiHint: 'red apple',
     category: 'Fruit',
   },
   {
@@ -30,7 +31,7 @@ export const products: Product[] = [
     name: 'Sweet Bananas',
     price: 1.99,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'banana fruit',
+    dataAiHint: 'banana bunch',
     category: 'Fruit',
   },
   {
@@ -38,7 +39,7 @@ export const products: Product[] = [
     name: 'Fresh Carrots',
     price: 2.2,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'carrot vegetable',
+    dataAiHint: 'carrot bunch',
     category: 'Vegetable',
   },
   {
@@ -46,7 +47,7 @@ export const products: Product[] = [
     name: 'Green Broccoli',
     price: 2.5,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'broccoli vegetable',
+    dataAiHint: 'broccoli floret',
     category: 'Vegetable',
   },
   {
@@ -54,7 +55,7 @@ export const products: Product[] = [
     name: 'Spinach Bunch',
     price: 3.0,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'spinach vegetable',
+    dataAiHint: 'spinach leaves',
     category: 'Vegetable',
   },
   {
@@ -62,7 +63,7 @@ export const products: Product[] = [
     name: 'Ripe Tomatoes',
     price: 2.8,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'tomato vegetable',
+    dataAiHint: 'vine tomato',
     category: 'Vegetable',
   },
   {
@@ -70,7 +71,7 @@ export const products: Product[] = [
     name: 'Summer Seasonal Box',
     price: 25.0,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'vegetable box',
+    dataAiHint: 'summer vegetables',
     category: 'Seasonal Box',
   },
   {
@@ -78,7 +79,7 @@ export const products: Product[] = [
     name: 'Winter Harvest Box',
     price: 30.0,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'vegetable box',
+    dataAiHint: 'winter vegetables',
     category: 'Seasonal Box',
   },
    {
@@ -94,7 +95,7 @@ export const products: Product[] = [
     name: 'Organic Blueberries',
     price: 5.50,
     image: 'https://placehold.co/600x400.png',
-    dataAiHint: 'blueberry fruit',
+    dataAiHint: 'fresh blueberries',
     category: 'Fruit',
   },
 ];
