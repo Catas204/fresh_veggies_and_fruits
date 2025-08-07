@@ -5,7 +5,7 @@ import { CartProvider } from '@/context/cart-context';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'FarmFresh Delivered',
+  title: 'Your Name',
   description: 'Farm-fresh fruits and vegetables, delivered to your door.',
 };
 

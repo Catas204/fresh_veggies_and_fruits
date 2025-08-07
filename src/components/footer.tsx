@@ -14,10 +14,10 @@ export default function Footer() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a href="#" className="flex items-center gap-2" aria-label="FarmFresh Delivered Home">
+                        <a href="#" className="flex items-center gap-2" aria-label="Your Name Home">
                             <Leaf className="h-8 w-8 text-primary" />
                             <span className="text-xl font-bold tracking-tight text-foreground font-headline">
-                                FarmFresh Delivered
+                                Your Name
                             </span>
                         </a>
                         <p className="mt-2 text-muted-foreground max-w-xs">Your daily dose of farm-fresh goodness, delivered right to your doorstep.</p>
@@ -59,7 +59,7 @@ export default function Footer() {
                 </div>
                 <hr className="my-6 border-border sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-muted-foreground sm:text-center">© {new Date().getFullYear()} FarmFresh Delivered™. All Rights Reserved.</span>
+                    <span className="text-sm text-muted-foreground sm:text-center">© {new Date().getFullYear()} Your Name™. All Rights Reserved.</span>
                     {/* Social media icons can be added here */}
                 </div>
             </div>
