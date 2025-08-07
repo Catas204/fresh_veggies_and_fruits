@@ -1,14 +1,14 @@
 
 'use server';
 
-import { suggestRecipes, type SuggestRecipesInput } from '@/ai/flows/suggest-recipes';
+import { suggestRecipes, type SuggestRecipesInput, type SuggestRecipesOutput } from '@/ai/flows/suggest-recipes';
 import { z } from 'zod';
 
 const actionSchema = z.object({
   vegetables: z.array(z.string()).min(1, { message: "Please select at least one vegetable." }),
 });
 
-export async function getRecipeSuggestionsAction(input: SuggestRecipesInput) {
+export async function getRecipeSuggestionsAction(input: SuggestRecipesInput): Promise<{recipes?: SuggestRecipesOutput['recipes']; error?: string}> {
   const parsedInput = actionSchema.safeParse(input);
 
   if (!parsedInput.success) {

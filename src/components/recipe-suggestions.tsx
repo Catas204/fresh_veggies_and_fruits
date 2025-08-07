@@ -14,6 +14,12 @@ import { getRecipeSuggestionsAction } from '@/lib/actions';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2 } from 'lucide-react';
 
+interface Recipe {
+  name: string;
+  description: string;
+  emoji: string;
+}
+
 interface RecipeSuggestionsProps {
   isOpen: boolean;
   onOpenChange: (isOpen: boolean) => void;
@@ -21,7 +27,7 @@ interface RecipeSuggestionsProps {
 }
 
 export default function RecipeSuggestions({ isOpen, onOpenChange, vegetables }: RecipeSuggestionsProps) {
-  const [recipes, setRecipes] = useState<string[]>([]);
+  const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const { toast } = useToast();
@@ -34,6 +40,7 @@ export default function RecipeSuggestions({ isOpen, onOpenChange, vegetables }: 
     
     setIsLoading(true);
     setError(null);
+    setRecipes([]);
     
     const result = await getRecipeSuggestionsAction({ vegetables });
     
@@ -45,7 +52,7 @@ export default function RecipeSuggestions({ isOpen, onOpenChange, vegetables }: 
         description: result.error,
       });
     } else if (result.recipes) {
-      setRecipes(result.recipes);
+      setRecipes(result.recipes as Recipe[]);
     }
     
     setIsLoading(false);
@@ -79,9 +86,15 @@ export default function RecipeSuggestions({ isOpen, onOpenChange, vegetables }: 
             </div>
           )}
           {!isLoading && !error && recipes.length > 0 && (
-            <ul className="space-y-2 list-disc list-inside bg-secondary/50 p-4 rounded-md">
+            <ul className="space-y-4">
               {recipes.map((recipe, index) => (
-                <li key={index}>{recipe}</li>
+                <li key={index} className="flex items-start gap-4 p-4 bg-secondary/50 rounded-lg">
+                  <span className="text-2xl mt-1">{recipe.emoji}</span>
+                  <div>
+                    <h3 className="font-bold text-foreground">{recipe.name}</h3>
+                    <p className="text-sm text-muted-foreground">{recipe.description}</p>
+                  </div>
+                </li>
               ))}
             </ul>
           )}
