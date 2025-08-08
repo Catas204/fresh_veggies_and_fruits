@@ -5,6 +5,7 @@ import ProductCard from './product-card';
 import { products } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import type { Product } from '@/types';
+import treeImage from '@/assets/tree.avif'
 
 const categories: ('All' | Product['category'])[] = ['All', 'Fruit', 'Vegetable', 'Seasonal Box'];
 
@@ -19,7 +20,7 @@ export default function ProductShowcase() {
     <section 
       id="products" 
       className="py-12 md:py-20 bg-cover bg-center relative" 
-      style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
+      style={{ backgroundImage: `url(${treeImage.src})` }}
       data-ai-hint="tree background"
     >
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
