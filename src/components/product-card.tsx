@@ -43,15 +43,16 @@ export default function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
 
   return (
-    <Card className="flex flex-col overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-none bg-secondary/50">
+    <Card className="flex flex-col overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-none bg-secondary/50 group">
       <CardHeader className="p-0">
-        <div className="relative aspect-video">
+        <div className="relative aspect-video overflow-hidden">
           <Image
             src={ProductImages[product.name]}
             alt={product.name}
             data-ai-hint={product.dataAiHint}
             layout="fill"
             objectFit="cover"
+            className="transition-transform duration-300 group-hover:scale-110"
           />
         </div>
       </CardHeader>
