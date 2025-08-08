@@ -133,7 +133,7 @@ export default function Cart({ isOpen, onOpenChange }: CartProps) {
                   <span>${totalPrice.toFixed(2)}</span>
                 </div>
                 
-                <div className="space-y-4 rounded-lg border p-4">
+                <div className="space-y-4 rounded-lg border bg-secondary/50 p-4">
                   <h3 className="font-headline text-xl">Checkout</h3>
                    <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">

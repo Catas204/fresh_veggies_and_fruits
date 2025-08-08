@@ -36,7 +36,7 @@ export default function DeliveryInfo() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {infoItems.map((item, index) => (
-                <Card key={index} className="text-center bg-card shadow-sm hover:shadow-lg transition-shadow">
+                <Card key={index} className="text-center bg-card shadow-sm hover:shadow-lg transition-shadow border-none">
                     <CardHeader>
                         <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit">
                            <item.icon className="h-10 w-10 text-primary" />
