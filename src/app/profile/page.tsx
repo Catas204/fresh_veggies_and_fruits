@@ -4,12 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { User, Edit } from "lucide-react";
+import user_profile from '@/assets/user_profile.jpg';
+
+const Images = {
+  'user_profile': user_profile
+}
 
 // Mock data for user and order history
 const user = {
   name: "Alex Doe",
   email: "alex.doe@example.com",
-  avatar: "https://placehold.co/100x100.jpg"
 };
 
 const orderHistory = [
@@ -27,7 +31,7 @@ export default function ProfilePage() {
           <Card>
             <CardHeader className="items-center text-center">
               <Avatar className="h-24 w-24 mb-2">
-                <AvatarImage src={user.avatar} alt={user.name} data-ai-hint="person portrait" />
+                <AvatarImage src={Images['user_profile'].src} alt={user.name} data-ai-hint="person portrait" />
                 <AvatarFallback>
                   <User className="h-12 w-12" />
                 </AvatarFallback>
