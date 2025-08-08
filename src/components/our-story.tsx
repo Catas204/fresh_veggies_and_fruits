@@ -1,6 +1,11 @@
 
 import Image from 'next/image';
 import { Button } from './ui/button';
+import story_image from '@/assets/story.png'
+
+const Images={
+  'story':story_image
+}
 
 export default function OurStory() {
   return (
@@ -20,7 +25,7 @@ export default function OurStory() {
           <div className="order-1 md:order-2">
             <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg group">
                 <Image
-                    src="https://placehold.co/600x600.jpg"
+                    src={Images['story']}
                     data-ai-hint="farmer holding vegetables"
                     alt="Farmer holding a basket of fresh vegetables"
                     layout="fill"
