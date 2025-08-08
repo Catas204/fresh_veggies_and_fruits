@@ -43,7 +43,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
 
   return (
-    <Card className="flex h-full flex-col overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-none bg-secondary/50 group">
+    <Card className="flex h-full flex-col overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-none bg-background/80 group backdrop-blur-sm">
       <CardHeader className="p-0">
         <div className="relative aspect-video overflow-hidden">
           <Image

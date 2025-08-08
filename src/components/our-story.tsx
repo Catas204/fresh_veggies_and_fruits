@@ -9,9 +9,9 @@ const Images={
 
 export default function OurStory() {
   return (
-    <section className="bg-background py-12 md:py-20">
+    <section className="bg-transparent py-12 md:py-20">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-background/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
           <div className="order-2 md:order-1">
             <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary mb-4">Our Story</h2>
             <p className="text-lg text-muted-foreground mb-4">

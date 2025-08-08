@@ -16,7 +16,7 @@ export default function ProductShowcase() {
     : products.filter(p => p.category === activeCategory);
 
   return (
-    <section id="products" className="py-12 md:py-20 bg-background">
+    <section id="products" className="py-12 md:py-20 bg-transparent">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary">Our Fresh Selection</h2>
@@ -31,7 +31,7 @@ export default function ProductShowcase() {
               key={category}
               variant={activeCategory === category ? 'default' : 'outline'}
               onClick={() => setActiveCategory(category)}
-              className="rounded-full px-6 capitalize"
+              className="rounded-full px-6 capitalize bg-background/80 backdrop-blur-sm"
             >
               {category}
             </Button>
