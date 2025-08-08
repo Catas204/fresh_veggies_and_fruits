@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'FarmFresh Delivered',
+  title: 'your company name',
   description: 'Farm-fresh fruits and vegetables, delivered to your door.',
 };
 
