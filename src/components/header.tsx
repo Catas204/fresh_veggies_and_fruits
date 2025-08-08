@@ -1,6 +1,7 @@
+
 'use client';
 
-import { Leaf, ShoppingCart, LayoutDashboard } from 'lucide-react';
+import { Leaf, ShoppingCart, LayoutDashboard, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/cart-context';
 import Cart from '@/components/cart';
@@ -29,6 +30,15 @@ export default function Header() {
             >
               <Link href="/dashboard" aria-label="Dashboard">
                 <LayoutDashboard className="h-6 w-6" />
+              </Link>
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              asChild
+            >
+              <Link href="/profile" aria-label="User Profile">
+                <User className="h-6 w-6" />
               </Link>
             </Button>
             <Button

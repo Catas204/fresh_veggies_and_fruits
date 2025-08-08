@@ -1,19 +1,18 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { CartProvider } from '@/context/cart-context';
 import { Toaster } from '@/components/ui/toaster';
-import { Playfair_Display, PT_Sans } from 'next/font/google';
+import { Poppins } from 'next/font/google';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
-const playfair = Playfair_Display({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-headline',
-});
-
-const ptSans = PT_Sans({
-  subsets: ['latin'],
-  weight: ['400', '700'],
+  display: 'swap',
   variable: '--font-body',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -31,12 +30,15 @@ export default function RootLayout({
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased',
-          playfair.variable,
-          ptSans.variable
+          poppins.variable
         )}
       >
         <CartProvider>
-          {children}
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
         </CartProvider>
         <Toaster />
       </body>
