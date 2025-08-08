@@ -15,10 +15,10 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-          <a href="/" className="flex items-center gap-2" aria-label="Your Name Home">
+          <a href="/" className="flex items-center gap-2" aria-label="FarmFresh Delivered Home">
             <Leaf className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold tracking-tight text-foreground font-headline">
-              Your Name
+              FarmFresh Delivered
             </span>
           </a>
           <div className="flex items-center gap-2">

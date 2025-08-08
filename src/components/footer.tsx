@@ -1,4 +1,4 @@
-import { Leaf } from "lucide-react";
+import { Leaf, Instagram, Facebook } from "lucide-react";
 
 const footerNavs = [
     { href: '#', name: 'About' },
@@ -14,10 +14,10 @@ export default function Footer() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a href="#" className="flex items-center gap-2" aria-label="Your Name Home">
+                        <a href="#" className="flex items-center gap-2" aria-label="FarmFresh Delivered Home">
                             <Leaf className="h-8 w-8 text-primary" />
                             <span className="text-xl font-bold tracking-tight text-foreground font-headline">
-                                Your Name
+                                FarmFresh Delivered
                             </span>
                         </a>
                         <p className="mt-2 text-muted-foreground max-w-xs">Your daily dose of farm-fresh goodness, delivered right to your doorstep.</p>
@@ -37,10 +37,16 @@ export default function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-foreground uppercase">Follow us</h2>
                              <ul className="text-muted-foreground space-y-4">
                                 <li>
-                                    <a href="#" className="hover:text-primary transition-colors">Instagram</a>
+                                    <a href="#" className="hover:text-primary transition-colors flex items-center gap-2">
+                                      <Instagram className="h-5 w-5" />
+                                      Instagram
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="hover:text-primary transition-colors">Facebook</a>
+                                    <a href="#" className="hover:text-primary transition-colors flex items-center gap-2">
+                                      <Facebook className="h-5 w-5" />
+                                      Facebook
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -59,8 +65,7 @@ export default function Footer() {
                 </div>
                 <hr className="my-6 border-border sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-muted-foreground sm:text-center">© {new Date().getFullYear()} Your Name™. All Rights Reserved.</span>
-                    {/* Social media icons can be added here */}
+                    <span className="text-sm text-muted-foreground sm:text-center">© {new Date().getFullYear()} FarmFresh Delivered™. All Rights Reserved.</span>
                 </div>
             </div>
         </footer>
