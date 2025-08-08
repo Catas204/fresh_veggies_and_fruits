@@ -1,5 +1,5 @@
 
-import type { Product } from '@/types';
+import type { Product, Testimonial } from '@/types';
 
 export const products: Product[] = [
   {
@@ -100,7 +100,7 @@ export const products: Product[] = [
   },
 ];
 
-export const testimonials = [
+export const testimonials: Testimonial[] = [
     {
         quote: "The produce is always incredibly fresh and delivery is so convenient. FarmFresh has changed the way my family eats!",
         name: "Sarah L.",
@@ -122,3 +122,32 @@ export const testimonials = [
         location: "Chicago, IL"
     }
 ]
+
+export const salesData = [
+  { name: 'Jan', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Feb', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Mar', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Apr', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'May', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Jun', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Jul', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Aug', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Sep', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Oct', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Nov', total: Math.floor(Math.random() * 5000) + 1000 },
+  { name: 'Dec', total: Math.floor(Math.random() * 5000) + 1000 },
+];
+
+export const popularProducts = [
+  { productId: '2', sales: 123 },
+  { productId: '1', sales: 115 },
+  { productId: '6', sales: 98 },
+  { productId: '9', sales: 85 },
+  { productId: '5', sales: 72 },
+];
+
+export const overviewData = {
+  totalRevenue: 98453,
+  sales: 1294,
+  newCustomers: 231,
+}
