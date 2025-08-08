@@ -105,6 +105,16 @@ export default {
             opacity: "1",
             transform: "translateY(0)"
           }
+        },
+        "fall-in": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-30px) scale(0.95) rotate(-4deg)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0) scale(1) rotate(0deg)"
+          }
         }
       },
       animation: {
@@ -112,6 +122,7 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         "fade-in-down": "fade-in-down 0.5s ease-out forwards",
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
+        "fall-in": "fall-in 0.4s ease-out forwards",
       },
     },
   },
