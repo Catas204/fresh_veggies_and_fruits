@@ -20,7 +20,7 @@ export default function OurStory() {
           <div className="order-1 md:order-2">
             <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg group">
                 <Image
-                    src="https://placehold.co/600x600.png"
+                    src="https://placehold.co/600x600.jpg"
                     data-ai-hint="farmer holding vegetables"
                     alt="Farmer holding a basket of fresh vegetables"
                     layout="fill"

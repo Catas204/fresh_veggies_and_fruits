@@ -9,7 +9,7 @@ import { User, Edit } from "lucide-react";
 const user = {
   name: "Alex Doe",
   email: "alex.doe@example.com",
-  avatar: "https://placehold.co/100x100.png"
+  avatar: "https://placehold.co/100x100.jpg"
 };
 
 const orderHistory = [
