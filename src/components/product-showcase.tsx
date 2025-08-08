@@ -19,7 +19,7 @@ export default function ProductShowcase() {
     <section 
       id="products" 
       className="py-12 md:py-20 bg-cover bg-center relative" 
-      style={{ backgroundImage: "url('https://placehold.co/1920x1080.png?text=.')" }}
+      style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
       data-ai-hint="tree background"
     >
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
