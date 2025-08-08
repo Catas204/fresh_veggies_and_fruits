@@ -150,4 +150,54 @@ export const overviewData = {
   totalRevenue: 98453,
   sales: 1294,
   newCustomers: 231,
-}
+  avgOrderValue: 76.05,
+  activeNow: 18,
+};
+
+
+export const recentSales = [
+    {
+        name: 'Olivia Martin',
+        email: 'olivia.martin@email.com',
+        amount: 19.99,
+        avatar: 'https://placehold.co/40x40.png',
+        avatarHint: 'woman portrait',
+    },
+    {
+        name: 'Jackson Lee',
+        email: 'jackson.lee@email.com',
+        amount: 39.99,
+        avatar: 'https://placehold.co/40x40.png',
+        avatarHint: 'man portrait',
+
+    },
+    {
+        name: 'Isabella Nguyen',
+        email: 'isabella.nguyen@email.com',
+        amount: 299.99,
+        avatar: 'https://placehold.co/40x40.png',
+        avatarHint: 'woman portrait',
+
+    },
+    {
+        name: 'William Kim',
+        email: 'will@email.com',
+        amount: 99.99,
+        avatar: 'https://placehold.co/40x40.png',
+        avatarHint: 'man portrait',
+    },
+    {
+        name: 'Sofia Davis',
+        email: 'sofia.davis@email.com',
+        amount: 39.99,
+        avatar: 'https://placehold.co/40x40.png',
+        avatarHint: 'woman portrait',
+
+    }
+]
+
+export const salesByCategoryData = [
+  { name: 'Fruit', value: 450, fill: 'hsl(var(--chart-1))' },
+  { name: 'Vegetable', value: 320, fill: 'hsl(var(--chart-2))' },
+  { name: 'Seasonal Box', value: 210, fill: 'hsl(var(--chart-3))'  },
+];
