@@ -1,4 +1,3 @@
-
 'use server';
 
 import { suggestRecipes, type SuggestRecipesInput, type SuggestRecipesOutput } from '@/ai/flows/suggest-recipes';
