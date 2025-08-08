@@ -16,8 +16,14 @@ export default function ProductShowcase() {
     : products.filter(p => p.category === activeCategory);
 
   return (
-    <section id="products" className="py-12 md:py-20 bg-transparent">
-      <div className="container mx-auto px-4 md:px-6">
+    <section 
+      id="products" 
+      className="py-12 md:py-20 bg-cover bg-center relative" 
+      style={{ backgroundImage: "url('https://placehold.co/1920x1080.png?text=.')" }}
+      data-ai-hint="tree background"
+    >
+      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-headline text-primary">Our Fresh Selection</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
