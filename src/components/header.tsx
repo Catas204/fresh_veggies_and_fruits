@@ -1,7 +1,7 @@
 
 'use client';
 
-import { Leaf, ShoppingCart, LayoutDashboard, User } from 'lucide-react';
+import { Leaf, ShoppingCart, LayoutDashboard, User, Home } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/cart-context';
 import Cart from '@/components/cart';
@@ -23,6 +23,15 @@ export default function Header() {
             </span>
           </a>
           <div className="flex items-center gap-2">
+             <Button
+              variant="ghost"
+              size="icon"
+              asChild
+            >
+              <Link href="/" aria-label="Home">
+                <Home className="h-6 w-6" />
+              </Link>
+            </Button>
             <Button
               variant="ghost"
               size="icon"
